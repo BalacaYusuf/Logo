@@ -1,0 +1,56 @@
+/* .logeColor{
+    color: white;
+   font-weight: bold;
+   font-size: 4pc;
+}
+.logo{
+    background-color: blue;
+    height: 5pc;
+    width: 455pc;
+} */
+.wrapper
+{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+h1{
+    color: white;
+    margin-left: 50px;
+}
+.logo{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-left: 50px;
+    
+}
+.logo::after{
+    content: "";
+   
+    width: 100px;
+    height: 30px;
+    border : 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left :-50px;
+    top:-15px;
+    transform: rotateZ(130deg);
+
+
+}
+.logo::before{
+    content: "";
+   
+    width: 100px;
+    height: 30px;
+    border : 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left :-50px;
+    top:-15px;
+    transform: rotateZ(-130deg);
+
+}
